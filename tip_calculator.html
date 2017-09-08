@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script type="text/javascript" src = "logic.js"></script>
+    </head>
+
+    <style>
+        
+        #title {
+            position: absolute;
+            left: 850px;
+        }
+        #boxes {
+            position: absolute;
+            top: 240px;
+        }
+        #check_amount {
+            position: absolute;
+            left: 150px;
+        }
+        #sales_tax_percent {
+            position: absolute;
+            left: 150px;
+        }
+        #tip_percent {
+            position: absolute;
+            left: 150px;
+        }
+        #sales_tax_total {
+            position: absolute;
+            left: 150px;
+        }
+        #tip_amount{
+            position: absolute;
+            left: 150px;
+        }
+        #pre-tax {
+            position: absolute;
+            top: 460px;
+        }
+        #button-total {
+            position: absolute;
+            top: 510px;
+        }
+
+    </style>
+
+    <body>
+        <h1 align = "center" id = "title">Tip Calculator</h1>
+
+        <form id = "boxes" align = "center">
+            Check amount: <input id = "check_amount"><br><br>
+            Sales Tax %: <input id = "sales_tax_percent" value = "7.0"><br><br>
+            Tip %: <input id = "tip_percent" value = "18.0"><br><br>
+            Sales Tax: <input id = "sales_tax_total"><br><br>
+            Tip Amount: <input id = "tip_amount"><br><br>
+        </form>
+
+        <br><br>
+        <button onclick = "button_preTax()" id = "pre-tax">Tip Pre-Tax</button><br><br>
+        <button onclick = "button_total()" id = "button-total">Tip On Total</button>
+
+    </body>
+
+
+
+</html>
